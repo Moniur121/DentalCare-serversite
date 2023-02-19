@@ -10,7 +10,12 @@ require('dotenv').config()
 const app = express();
 // app.use(ObjectID);
 app.use(bodyParser.json());
-app.use(cors());
+app.use(
+    cors({
+        origin: ['http://localhost:3000'],
+        credentials: true,
+    })
+)
 // <<<<<<<< dependencies end>>>
 
 const port =  5000;
