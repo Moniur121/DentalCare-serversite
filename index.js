@@ -15,7 +15,7 @@ app.use(cors());
 
 const port =  5000;
 // <<<< connecting Application>>>>>
-const uri = "mongodb+srv://doctordb:doctordb121@cluster0.1brmu.mongodb.net/doctorPortal?retryWrites=true&w=majority";
+const uri = "mongodb+srv://doctordb:doctordb121@cluster0.fob1y.mongodb.net/doctorPortal?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true },(error)=>error && console.log(error));
   client.connect(err => {
     const bookAppointmentCollection = client.db("doctorsPortal").collection("bookAppointment");
