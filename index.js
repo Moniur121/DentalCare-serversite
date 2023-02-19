@@ -116,4 +116,4 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
         res.send('Hello World!')
       });
   });
-  app.listen(process.env.PORT || port);
+  app.listen(port);
